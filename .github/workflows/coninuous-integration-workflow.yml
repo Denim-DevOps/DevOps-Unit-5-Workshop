@@ -9,3 +9,9 @@ jobs:
     steps:
     - uses: actions/checkout@v4 # Adds a step to checkout the repository code
 
+    - name: Build the C# code
+      run: dotnet build
+
+    - name: Run the C# Tests
+      working-directory: 
+      run: dotnet test
