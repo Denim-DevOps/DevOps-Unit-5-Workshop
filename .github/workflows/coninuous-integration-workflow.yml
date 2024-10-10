@@ -17,9 +17,9 @@ jobs:
       run: dotnet test
 
     - name: Build the TS code
-      working-directory: DotnetTemplate.web
+      working-directory: DotnetTemplate.Web
       run: npm run build
 
     - name: Run the TS tests
-      working-directory: DotnetTemplate.web
+      working-directory: DotnetTemplate.Web
       run: npm run lint
