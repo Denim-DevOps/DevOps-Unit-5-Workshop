@@ -16,6 +16,10 @@ jobs:
       working-directory: 
       run: dotnet test
 
+    - name: Run npm install
+      working-directory: DotnetTemplate.Web
+      run: npm install
+
     - name: Build the TS code
       working-directory: DotnetTemplate.Web
       run: npm run build
