@@ -12,6 +12,14 @@ jobs:
     - name: Build the C# code
       run: dotnet build
 
-    - name: Run the C# Tests
+    - name: Run the C# tests
       working-directory: 
       run: dotnet test
+
+    - name: Build the TS code
+      working-directory: DotnetTemplate.web
+      run: npm run build
+
+    - name: Run the TS tests
+      working-directory: DotnetTemplate.web
+      run: npm run lint
